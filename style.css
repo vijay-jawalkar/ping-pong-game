@@ -1,0 +1,143 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: monospace, sans-serif;
+}
+
+#body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  background-size: contain;
+  background-color: #f8c8dc;
+}
+
+.display-upper {
+  height: 40vh;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  z-index: 10;
+  top: 40vh;
+  text-align: center;
+  color: yellow;
+}
+
+.display-upper button {
+  background-color: yellow;
+  font-size: 160%;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*container of the game*/
+.container {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-left: 17px solid black;
+  border-right: 17px solid black;
+  margin: 0px;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #ff7f50;
+}
+
+.rod1,
+.rod2 {
+  background-color: #32cd32;
+  width: 10%;
+  height: 20px;
+  position: relative;
+  left: 45%;
+  border-radius: 20rem;
+  box-sizing: border-box;
+  font-size: 15px;
+  text-align: center;
+}
+.rod2 {
+  background-color: red;
+}
+
+.ball {
+  background-color: #ffe5e5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+/*To hide the element*/
+.hidden {
+  visibility: hidden;
+}
+
+.center-rod {
+  left: 45%;
+}
+
+.change-opacity {
+  opacity: 0.4;
+}
+
+/*container for score and new game button*/
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  background-size: contain;
+  box-sizing: border-box;
+  align-items: baseline;
+}
+.top-container > div {
+  height: 20px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.score {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+}
+.score h5 {
+  font-size: 100%;
+  font-weight: 700;
+}
+
+/* new game button */
+.new-game button {
+  background-color: #5190ed;
+  font-size: 80%;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  box-shadow: 0px 0px 4px black;
+  color: whitesmoke;
+}
+
+.lives {
+  color: #494958f2;
+}
+
+.lives i {
+  color: red;
+  font-size: 1rem;
+}

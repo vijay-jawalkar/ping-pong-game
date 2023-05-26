@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5f2cf94554.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- this is start button, by pressing it, the game will start -->
+    <div id="start-button" class="display-upper">
+      <button type="button" name="button">Start Game</button>
+    </div>
+
+    <main id="body-container" class="change-opacity">
+      <!-- this upper section, where rode-1 - score and remaining lives will display -->
+      <section class="top-container">
+        <!-- score -->
+        <div class="score">Score : <span id="score-display1"> 0 </span></div>
+
+        <!-- new game button -->
+        <div class="new-game" id="new-game-button">
+          <button type="button" name="button">New Game</button>
+        </div>
+
+        <!-- remaining lives -->
+        <div class="lives">
+          Lives <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-regular fa-heart heart1"></i>
+          <i class="fa-regular fa-heart heart1"></i>
+        </div>
+      </section>
+
+      <!-- this is middle section, where rod-1 and rod-2 will play game -->
+      <section class="container">
+        <div class="rod1">Player 1</div>
+        <div class="ball"></div>
+        <div class="rod2">Player 2</div>
+      </section>
+
+      <!-- this lower section, where rode-2 - score and remaining lives will display -->
+      <section class="top-container">
+        <!-- score -->
+        <div class="score">Score : <span id="score-display2"> 0 </span></div>
+
+        <!-- remaining lives -->
+        <div class="lives">
+          Lives <i class="fa-regular fa-heart heart2"></i>
+          <i class="fa-regular fa-heart heart2"></i>
+          <i class="fa-regular fa-heart heart2"></i>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
